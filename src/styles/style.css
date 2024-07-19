@@ -1,0 +1,9 @@
+.displaypoke {
+  background-color: red;
+  height: 500px;
+  width: 500px;
+}
+
+body > * {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
