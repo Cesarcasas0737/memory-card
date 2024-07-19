@@ -75,13 +75,9 @@ export default function MemoryBoard({
         negateGameOverStatus()
     }
 
-
     useEffect(() =>{
-        console.log('uniqueId size'+uniqueId.size);
-        console.log('pokeClickedCount'+pokeClickedCount);
         if (uniqueId.size != pokeClickedCount) {  
-            console.log('you clicked a duplicate Detected')
-            
+            //console.log('you clicked a duplicate')
             setScore(score -1)
             if (score === highScore) {
                 setHighScore(highScore -1)
@@ -102,7 +98,6 @@ export default function MemoryBoard({
 
     return(
         <>
-
             {isNotGameOver ? (
                 <pre>
                     <h1>{pokeClickedCount}/{pokemonsArray.length}</h1>
