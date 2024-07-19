@@ -69,11 +69,8 @@ export default function DisplayRandPoke(pokeData){
                 ) : (
                     
                 <div>
-                    <div>
-                        <h1>Pokemon</h1>
-                        <button onClick={() => getUniquePokeNames(amountOfPoke)}>Start Game!</button>
-                    </div>
-
+                    <h1>Pokemon</h1>
+                    <button onClick={() => getUniquePokeNames(amountOfPoke)}>Start Game!</button>
                 </div>
             )}
         </>
