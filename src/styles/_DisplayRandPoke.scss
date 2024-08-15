@@ -1,6 +1,46 @@
+@import './_Variable';
 
-.displaypoke{
-    background-color: red;
-    height: 500px;
-    width: 500px;
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;   
+}
+
+.github{
+    position: fixed;
+
+}
+
+@media screen and (min-width: 0px) and (max-width: $sm_ph){
+    .boardContainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        //use a var
+        background-color: lightgrey;
+    }
+
+    .title{
+        display: flex;
+        position: absolute;
+        top: 10%;
+        
+        width: 80%;
+        overflow: hidden;
+        h1{
+            
+            font-size: 70px;
+            overflow: hidden;
+        }
+        button{
+            height: 40px;
+            width: 80%;
+            margin-top: 80px;
+        }
+    }
 }

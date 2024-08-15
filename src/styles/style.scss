@@ -1,5 +1,7 @@
-@import './_DisplayRandPoke.scss';
-
-body > *{
-    color: red;
-}
+@import './ClearStyles';
+@import './_Variable';
+@import './Root';
+@import './GetApiData';
+@import './DisplayRandPoke.scss';
+@import './MemoryBoard';
+@import './MemoryCards';
