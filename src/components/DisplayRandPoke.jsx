@@ -23,7 +23,7 @@ export default function DisplayRandPoke(pokeData){
             let randomId
             
             do {
-                randomId = getRandomIntFromRange(0,pokeDexLength - 1)
+                randomId = getRandomIntFromRange(1,pokeDexLength - 1)
                 if (idNameSet.has(randomId)=== true) {
                     duplicateCounter++
 
@@ -54,7 +54,7 @@ export default function DisplayRandPoke(pokeData){
     return(
         <>
             {pokeNames ? (
-                <pre>
+                <pre className="boardContainer">
                     <MemoryBoard 
                         pokemonsArray = {pokeNames}
                         setPokemonsArray = {setPokeNames}
@@ -67,11 +67,16 @@ export default function DisplayRandPoke(pokeData){
                 </pre>
                 
                 ) : (
-                    
-                <div>
+                     
+                <div className="title">
                     <h1>Pokemon</h1>
+                    <h2>Memory Card</h2>
+                    <h3>Version</h3>
                     <button onClick={() => getUniquePokeNames(amountOfPoke)}>Start Game!</button>
+                    <a className="github" href="https://github.com/Cesarcasas0737/memory-card">Github repo</a>
                 </div>
+            
+                
             )}
         </>
     )
