@@ -17,14 +17,15 @@ export default function FetchPokemonList(){
       return(
         <>
             {pokeData ? (
-                    <pre>
+                    <pre className="main">
                         <DisplayRandPoke 
                             props ={pokeData}
                         />
                     </pre>
                     
                     ) : (
-                    <p>Getting Api...</p>
+
+                    <p className="apiLoad">Getting Api...</p>
                 )}
         </>
     )
