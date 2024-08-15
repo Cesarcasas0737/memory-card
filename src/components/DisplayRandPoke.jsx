@@ -73,7 +73,9 @@ export default function DisplayRandPoke(pokeData){
                     <h2>Memory Card</h2>
                     <h3>Version</h3>
                     <button onClick={() => getUniquePokeNames(amountOfPoke)}>Start Game!</button>
-                    <a className="github" href="https://github.com/Cesarcasas0737/memory-card">Github repo</a>
+                    <a className="github" href="https://github.com/Cesarcasas0737/memory-card">
+                        <img src="src/assets/github.svg" alt="" />
+                    </a>
                 </div>
             
                 

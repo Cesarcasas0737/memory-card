@@ -139,10 +139,11 @@ export default function MemoryBoard({
                 ) : (
                     
                 <div className="gameOverScreen">
-                   <h2>Game Over</h2>
-                   <p>Score: {score}</p>
-                   <p>High Score: {highScore}</p>
-                   <button onClick={launchGameAgain}>Play Again?</button>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png" alt="" />
+                    <h2>Game Over</h2>
+                    <p>Score: {score}</p>
+                    <p>High Score: {highScore}</p>
+                    <button onClick={launchGameAgain}>Play Again?</button>
                 </div>
             )}
         </>

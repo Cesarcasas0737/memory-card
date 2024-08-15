@@ -102,7 +102,7 @@
             grid-row-end: 3;
         }
 
-        p:nth-child(2){  
+        p:nth-child(4){  
             align-self: flex-end;
         }
 
@@ -130,8 +130,22 @@
 
             background-color: darkgrey;
         }
+
+        img{
+            display: flex;
+
+            grid-column-start: 2;
+            grid-column-end: 5;
+            
+            grid-row-start: 4;
+            grid-row-end: 5;
+            
+            align-self: center;
+            justify-self: center;
+        }
+
         h1,h2,p{
-            color: red;
+           color: red;
         }
     }
 }
