@@ -1,3 +1,5 @@
+//import '/src/styles/_MemoryCards.scss'
+
 export default function MemoryCards({
     pokemonsArray,
 
@@ -31,7 +33,8 @@ export default function MemoryCards({
     return(
         <>   
         {pokemonsArray.map(pokemon => (
-            <button 
+            <button
+                className='memorycard'
                 key={pokemon.id}
                 onClick={() => clickCard(pokemon.id)}
             >
@@ -39,7 +42,7 @@ export default function MemoryCards({
                     {`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
                     alt={`${pokemon.name}`}
                 />
-                {pokemon.name}
+                <p>{pokemon.name}</p>
             </button>
         ))
         }
