@@ -129,6 +129,33 @@ html, body {
     margin-top: 80px;
   }
 }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .boardContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgrey;
+  }
+  .title {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    width: 400px;
+    background-color: red;
+    overflow: hidden;
+  }
+  .title h1 {
+    font-size: 70px;
+    overflow: hidden;
+  }
+  .title button {
+    height: 40px;
+    width: 50%;
+    margin-top: 80px;
+  }
+}
 .playboard {
   display: flex;
   flex-direction: column;
@@ -244,6 +271,110 @@ html, body {
     color: red;
   }
 }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .memoryboard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: lightgrey;
+  }
+  .gameUi {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: rgb(79, 76, 76);
+    width: 100%;
+    height: 90px;
+  }
+  .gameUi h1, .gameUi h2 {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+  .gameUi > button {
+    grid-area: 2/2;
+  }
+  .gameUi h1 {
+    grid-area: 3/2;
+  }
+  .gameUi h2:nth-child(3) {
+    grid-area: 2/1;
+  }
+  .gameUi h2:nth-child(4) {
+    grid-area: 2/3;
+  }
+  .playboard {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 150px;
+    grid-auto-flow: row;
+    background-color: rgb(79, 76, 76);
+    overflow: hidden;
+  }
+  .gameOverScreen {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100%;
+    width: 100%;
+    background-color: black;
+  }
+  .gameOverScreen h2 {
+    font-size: 15cqi;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .gameOverScreen p {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .gameOverScreen p:nth-child(4) {
+    align-self: flex-end;
+  }
+  .gameOverScreen p:nth-child(3) {
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+  .gameOverScreen button {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 50%;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: darkgrey;
+  }
+  .gameOverScreen img {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-self: center;
+    justify-self: center;
+  }
+  .gameOverScreen h1, .gameOverScreen h2, .gameOverScreen p {
+    color: red;
+  }
+}
 .memorycard {
   display: flex;
   flex-direction: column;
@@ -253,6 +384,20 @@ html, body {
 }
 
 @media screen and (min-width: 0px) and (max-width: 480px) {
+  .memorycard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  .memorycard img {
+    width: 80%;
+    height: 80%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .memorycard {
     display: flex;
     flex-direction: column;
