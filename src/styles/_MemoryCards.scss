@@ -24,38 +24,6 @@
     }
 }
 
-@media screen and (min-width: $sm_ph) and (max-width: $md_tab){   
-    .memorycard{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-
-        img{
-            width: 80%;
-            height: 80%;
-        }
-    }
-}
-
-@media screen and (min-width: $md_tab) and (max-width: $md_desk){   
-    .memorycard{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-
-        img{
-            width: 80%;
-            height: 80%;
-        }
-    }
-}
-
 *{
     font-family: "Cinzel", serif;
 }
