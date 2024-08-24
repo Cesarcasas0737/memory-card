@@ -112,7 +112,7 @@ export default function MemoryBoard({
             {isNotGameOver ? (
                 <pre className="memoryboard">
                     <div className="gameUi">
-                        <button onClick={pokeListNextLv}>Next level</button>
+                        
                         <h1>{pokeClickedCount}/{pokemonsArray.length}</h1>
                         <h2>Score: {score}</h2>
                         <h2>High Score: {highScore}</h2>  
