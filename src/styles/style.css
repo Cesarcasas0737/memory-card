@@ -199,7 +199,7 @@ html, body {
 .gameUi h2:nth-child(3) {
   grid-area: 2/1;
 }
-.gameUi h2:nth-child(4) {
+.gameUi h2:nth-child(2) {
   grid-area: 2/3;
 }
 
