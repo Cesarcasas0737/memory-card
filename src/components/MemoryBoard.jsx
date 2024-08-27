@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import MemoryCards from "./MemoryCards"
+import { playSound } from "../utils/playSound"
 
 export default function MemoryBoard({
     pokemonsArray,
@@ -69,14 +70,11 @@ export default function MemoryBoard({
     }
 
     function launchGameAgain(){
+        playSound('rewardSound')
         resetScore()
         negateGameOverStatus()
     }
 
-    function playSound(soundName){
-        const audio = new Audio(`/sounds/${soundName}.mp3`);
-        audio.play();
-    }
 
     useEffect(() =>{
 
