@@ -75,7 +75,7 @@ export default function MemoryBoard({
         negateGameOverStatus()
     }
 
-
+    //Just because I Can dosen't mean I should but.. 
     useEffect(() =>{
 
         //clicked duplicate
