@@ -189,6 +189,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-self: center;
+  color: lightgrey;
 }
 .gameUi > button {
   grid-area: 2/2;
