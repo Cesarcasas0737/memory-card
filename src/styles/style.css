@@ -63,7 +63,7 @@ html, body {
 }
 
 #root {
-  background-color: rgb(77, 69, 69);
+  background-color: rgb(79, 76, 76);
   height: 100%;
 }
 
@@ -90,7 +90,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: bisque;
+  background-color: rgb(79, 76, 76);
 }
 
 .github {
@@ -109,7 +109,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightgrey;
+  background-color: rgb(79, 76, 76);
 }
 
 .title {
@@ -117,7 +117,7 @@ html, body {
   position: absolute;
   top: 25%;
   width: 400px;
-  background-color: red;
+  background-color: lightgrey;
   overflow: hidden;
 }
 .title h1 {
