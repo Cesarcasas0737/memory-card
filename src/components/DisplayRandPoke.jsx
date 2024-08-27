@@ -2,17 +2,11 @@ import { useState } from "react"
 import '/src/styles/_DisplayRandPoke.scss'
 import MemoryBoard from "./MemoryBoard";
 import { playSound } from "../utils/playSound";
-
+import { getRandomIntFromRange } from "../utils/getRandomIntFromRange";
 
 export default function DisplayRandPoke(pokeData){
     const [amountOfPoke,setAmountOfPoke] = useState(5);
     const [pokeNames,setPokeNames] = useState(null);
-
-    function getRandomIntFromRange(min, max) {
-        min = Math.ceil(min); 
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min)) + min;
-    }
   
     function getUniquePokeNames(amountOfPoke){
         const pokeDexLength = pokeData.props.results.length;   
